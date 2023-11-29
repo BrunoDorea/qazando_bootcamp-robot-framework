@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231129 10:52:19.426" rpa="false" schemaversion="4">
+<suite id="s1" name="Teste" source="C:\Github\qazando_bootcamp-robot-framework\teste.robot">
+<test id="s1-t1" name="Cenário 2: Acessar site pessoal" line="61">
+<kw name="Acessar site pessoal como headless">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE_BRUNO}</arg>
+<arg>chrome</arg>
+<arg>options=add_argument("--headless")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231129 10:52:19.765" level="INFO">Opening browser 'chrome' to base url 'https://www.brunodorea.com.br/'.</msg>
+<status status="PASS" starttime="20231129 10:52:19.765" endtime="20231129 10:52:22.105"/>
+</kw>
+<status status="PASS" starttime="20231129 10:52:19.765" endtime="20231129 10:52:22.105"/>
+</kw>
+<kw name="Aguardar site carregar">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231129 10:52:27.106" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231129 10:52:22.106" endtime="20231129 10:52:27.106"/>
+</kw>
+<status status="PASS" starttime="20231129 10:52:22.106" endtime="20231129 10:52:27.106"/>
+</kw>
+<kw name="Captura de Tela">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231129 10:52:27.180" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231129 10:52:27.108" endtime="20231129 10:52:27.180"/>
+</kw>
+<status status="PASS" starttime="20231129 10:52:27.108" endtime="20231129 10:52:27.180"/>
+</kw>
+<tag>Pessoal</tag>
+<status status="PASS" starttime="20231129 10:52:19.764" endtime="20231129 10:52:27.180"/>
+</test>
+<status status="PASS" starttime="20231129 10:52:19.431" endtime="20231129 10:52:27.181"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Pessoal</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Teste">Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

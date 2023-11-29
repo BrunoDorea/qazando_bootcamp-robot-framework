@@ -15,6 +15,14 @@ Repositório criado para o Bootcamp Robot Framework.
 ![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
 ![Robot Framework](https://img.shields.io/static/v1?style=for-the-badge&message=Robot+Framework&color=000000&logo=Robot+Framework&logoColor=FFFFFF&label=)
 
+## 👨🏽‍💻 Comandos Básicos
+
+- `robot teste.robot` ->  Executar todos Test Cases
+- `robot --test "Cenário 1: Logar com sucesso" teste.robot` -> Executar um teste especifico pelo 'nome'
+- `robot --include Regressivo teste.robot` -> Executar todos os teste quem tem a 'Tag'
+- `robot --exclude Regressivo teste.robot` -> Executar todos os teste, exceto o que tem a 'Tag' definida
+- `robot --outputdir Report teste.robot` -> Executar todos Test Cases, salvando o report na pasta de Report
+
 ## 👨🏽‍💻 Autor
 
 Bruno Dórea
